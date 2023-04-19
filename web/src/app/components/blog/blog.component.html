@@ -1,0 +1,104 @@
+<body class="blog_version">
+    <!--================Blog Area =================-->
+    <section class="blog_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog_left_sidebar">
+                        <article class="row blog_item" *ngIf="blogItems.length === 1">
+                            <div class="col-md-3">
+                                <div class="blog_info text-right">
+                                    <ul class="blog_meta list">
+                                        <li><a href="#">{{blogItems[0].date}}<i class="lnr lnr-calendar-full"></i></a>
+                                        </li>
+                                        <li><a href="#">{{blogItems[0].views}} Views<i class="lnr lnr-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="blog_post">
+                                    <img src="{{blogItems[0].image}}" alt="">
+                                    <div class="blog_details">
+                                        <a href="{{blogItems[0].url}}">
+                                            <h2>{{blogItems[0].title}}</h2>
+                                        </a>
+                                        <p>{{blogItems[0].content}}</p>
+                                        <a href="{{blogItems[0].url}}" class="btn btn-primary"><span>View
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <ng-container *ngIf="blogItems.length > 1">
+                            <article class="row blog_item" *ngFor="let item of blogItems">
+                                <div class="col-md-3">
+                                    <div class="blog_info text-right">
+                                        <ul class="blog_meta list">
+                                            <li><a href="#">{{item.date}}<i class="lnr lnr-calendar-full"></i></a></li>
+                                            <li><a href="#">{{item.views}} Views<i class="lnr lnr-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="blog_post">
+                                        <img src="{{item.image}}" alt="">
+                                        <div class="blog_details">
+                                            <a href="{{item.url}}">
+                                                <h2>{{item.title}}</h2>
+                                            </a>
+                                            <p>{{item.content}}</p>
+                                            <a href="{{item.url}}" class="btn btn-primary"><span>View More</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Posts">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i
+                                            class="lnr lnr-magnifier"></i></button>
+                                </span>
+                            </div><!-- /input-group -->
+                            <div class="br"></div>
+                        </aside>
+                        <aside class="single_sidebar_widget author_widget">
+                            <img class="author_img rounded-circle" src="assets/img/logo.png" alt="">
+                            <h5>Thiwanka Kalum</h5><br>
+                            <p>Welcome to my blog! I'm a tech enthusiast and software developer with a passion for
+                                exploring the latest technology trends and sharing my insights with others. I specialize
+                                in developing cutting-edge software solutions that solve complex business problems and
+                                drive growth. In this blog, I'll be sharing my experiences and knowledge about various
+                                tech-related topics, ranging from software development best practices to the latest
+                                technology trends and innovations. I hope my articles will provide valuable insights and
+                                practical guidance for fellow tech Ephesians and anyone interested in the world of
+                                software development.</p>
+                            <div class="br"></div>
+                        </aside>
+
+                        <aside class="single-sidebar-widget newsletter_widget">
+                            <h4 class="widget_title">Newsletter</h4>
+                            <p>Stay up-to-date with the latest technology trends and insights by subscribing to my
+                                articles today!</p>
+                            <div class="form-group d-flex flex-row">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="inlineFormInputGroup"
+                                        placeholder="Enter email" [(ngModel)]="email" name="email" required>
+                                </div>
+                                <button class="bbtns" (click)="subscribe()">Subscribe</button>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+</body>

@@ -1,0 +1,70 @@
+<section class="contact_area section_gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="contact_form" (submit)="onSubmit()">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-4">Get in touch</h3>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                    [(ngModel)]="name" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    [(ngModel)]="email" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                    placeholder="Subject" [(ngModel)]="subject" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="5"
+                                    placeholder="Message" [(ngModel)]="message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img src="assets/img/contact.png" alt="contact Picture" class="img-fluid">
+                </div>
+                <div class="social-media">
+                    <h3 class="text-center mb-4">Follow me on social media</h3>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="https://twitter.com/Thiwank53847219"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/Thiwanka2002/"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/_t_h_i_w_a__/"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a
+                                href="https://www.linkedin.com/in/thiwanka-sandakalum-052801220/"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a
+                                href="https://stackoverflow.com/users/20101383/thiwanka-sandakalum"><i
+                                    class="fab fa-stack-overflow"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/@thiwankasandakalum8903"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.tiktok.com/@thiwankax"><i
+                                    class="fab fa-tiktok"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/Thiwanka-Sandakalum"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,92 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .contact_area {
+      padding: 80px 0;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    .contact_area {
+      padding: 100px 0;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .contact_area {
+      padding: 120px 0;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+    .contact_area {
+      padding: 150px 0;
+    }
+  }
+  
+  .contact_area .container {
+    max-width: 1200px;
+  }
+  
+  .contact_area h3 {
+    font-size: 36px;
+  }
+  
+  .contact_area form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 5px;
+  }
+  
+  .contact_area form input[type=text], .contact_area form input[type=email], .contact_area form textarea {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .contact_area form textarea {
+    height: 150px;
+  }
+  
+  .contact_area form button[type=submit] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact_area form button[type=submit]:hover {
+    background-color: #0062cc;
+  }
+  
+  .contact_area .social-media {
+    margin-top: 50px;
+  }
+  
+  .contact_area .social-media h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .contact_area .social-media ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact_area .social-media li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .contact_area .social-media li:last-child {
+    margin-right: 0;
+  }
+  

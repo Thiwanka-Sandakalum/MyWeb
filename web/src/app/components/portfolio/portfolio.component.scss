@@ -1,0 +1,138 @@
+/* Default styles */
+.portfolio_area {
+    padding: 100px 0;
+  }
+  
+  .portfolio_area .main_title h2 {
+    font-size: 36px;
+  }
+  
+  .portfolio_area .filters li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .portfolio_area .single_portfolio {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio_area .single_portfolio img {
+    transition: transform 0.5s ease;
+  }
+  
+  .portfolio_area .single_portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.5s ease;
+  }
+  
+  .portfolio_area .single_portfolio .short_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .portfolio_area .single_portfolio:hover img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio_area .single_portfolio:hover .overlay {
+    opacity: 1;
+  }
+  
+  .portfolio_area .single_portfolio:hover .short_info {
+    opacity: 1;
+  }
+  
+  /* Responsive styles for screens smaller than 768px */
+  @media screen and (max-width: 767px) {
+
+    .main_title{
+      margin-top: 30px;
+    }
+
+    .portfolio_area {
+      padding: 50px 0;
+    }
+  
+    .portfolio_area .main_title h2 {
+      font-size: 24px;
+    }
+  
+    .portfolio_area .filters {
+      margin-bottom: 30px;
+    }
+  
+    .portfolio_area .filters li {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  
+    .portfolio_area .single_portfolio img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Responsive styles for screens between 768px and 991px */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .portfolio_area {
+      padding: 80px 0;
+    }
+  
+    .portfolio_area .main_title h2 {
+      font-size: 28px;
+    }
+  
+    .portfolio_area .filters li {
+      font-size: 16px;
+    }
+  }
+  
+  /* Responsive styles for screens between 992px and 1199px */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .portfolio_area {
+      padding: 120px 0;
+    }
+  
+    .portfolio_area .main_title h2 {
+      font-size: 32px;
+    }
+  
+    .portfolio_area .filters li {
+      font-size: 18px;
+    }
+  }
+  
+  /* Responsive styles for screens larger than 1200px */
+  @media screen and (min-width: 1200px) {
+    .portfolio_area {
+      padding: 150px 0;
+    }
+  
+    .portfolio_area .main_title h2 {
+      font-size: 36px;
+    }
+  
+    .portfolio_area .filters li {
+      font-size: 20px;
+    }
+  
+    .portfolio_area .single_portfolio {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

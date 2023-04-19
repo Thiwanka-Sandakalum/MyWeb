@@ -1,0 +1,48 @@
+.social-icons a {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    /* adjust size as needed */
+    line-height: 1;
+    color: #7d50ec;
+}
+
+/* Change color of icons on hover */
+.social-icons a:hover i {
+    color: #03070c;
+}
+
+
+/* custom */
+
+.social-icons {
+    color: #fff;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+        0 0 200px #0072ff;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.home_right_img {
+    height: 100%;
+  }
+  
+  .home_right_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  

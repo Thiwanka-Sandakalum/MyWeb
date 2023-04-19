@@ -1,0 +1,45 @@
+<!-- Content of the component goes here -->
+<section class="portfolio_area section_gap_top" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main_title text-left">
+                    <h2>my project </h2>
+                </div>
+            </div>
+        </div>
+        <div class="filters portfolio-filter">
+            <ul>
+                <li (click)="categoryFilter('*')" [ngClass]="{ 'active': activeFilter === '*' }">all</li>
+                <li (click)="categoryFilter('web')" [ngClass]="{ 'active': activeFilter === 'web' }">web</li>
+                <li (click)="categoryFilter('desktop')" [ngClass]="{ 'active': activeFilter === 'desktop' }">desktop
+                </li>
+                <li (click)="categoryFilter('data_science')" [ngClass]="{ 'active': activeFilter === 'data_science' }">
+                    data science</li>
+                <li (click)="categoryFilter('ongoing')" [ngClass]="{ 'active': activeFilter === 'ongoing' }">ongoing
+                </li>
+            </ul>
+        </div>
+        <div class="filters-content">
+            <div class="row portfolio-grid justify-content-center">
+                <div class="col-lg-4 col-md-6" *ngFor="let item of portfolioItems">
+                    <div class="portfolio_box" *ngIf="activeFilter === '*' || item.category === activeFilter">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" [src]="item.imageSrc" alt="">
+                            <div class="overlay"></div>
+                            <a [href]="item.imageSrc" class="img-gal">
+                                <div class="icon">
+                                    <span class="lnr lnr-eye"></span>
+                                </div>
+                            </a>
+                            <div class="short_info">
+                                <h4><a href="#">{{ item.title }}</a></h4>
+                                <p>{{ item.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
