@@ -13,7 +13,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TypingAnimatorModule } from 'angular-typing-animator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,6 +20,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +41,6 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatMenuModule,
     MatListModule,
-    TypingAnimatorModule,
     FormsModule,
     HttpClientModule,
     MatSidenavModule,
